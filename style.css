@@ -1,0 +1,61 @@
+body {
+      font-family: Tahoma, sans-serif;
+      background: white;
+    }
+    header {
+      text-align: center;
+      background: url('http://i.imgur.com/DEx6q0L.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-family: Georgia, sans-serif;
+      font-style: italic;
+      font-size: 60px;
+      font-weight: lighter;
+    }
+    h2 {
+      color: #00415d
+        max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+     p {
+      color: #696969
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: Verdana, sans-serif;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+   nav {
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    button {
+      background-color: #008080;
+      color: white
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+ 
