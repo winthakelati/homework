@@ -3,7 +3,7 @@
   ========================================================================== */
 * {
   box-sizing: border-box;
-   border: 1px solid red; 
+/*   border: 1px solid red; */
 }
 
 .clearfix:after {
@@ -23,16 +23,16 @@
     White - #ffffff;
     Light Grey - #d4e1db
     Dark Grey - #3c3a3a
-    Grey/Black(text color) -
-    Yellow -
-    Red -
+    Grey/Black(text color) - #080808
+    Yellow - #FEDB0D
+    Red - #FF0121
 */
 
 
 /* Global
    ================================================================ */
 body {
-  
+  color:#080808;
   /* Set some defaults! font-family, font-size, color, etc. */
 }
 
@@ -42,14 +42,34 @@ a {
   text-decoration: none;
   /* Set some default styles for anchors (color, text decoration) */
 }
+
+a:hover{
+  color: #FEDB0D;
+}
+
 p{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'sans-serif';
+  padding-bottom: 10px;
+  margin-top: 5px;
+  line-height: 28px;
+  font-size:18px;
 }
 h1{
   font-family:'Merriweather', 'sans-serif';
+  font-weight: 400px;
 }
+
+h2{
+font-family: 'Source Sans Pro', 'sans-serif';
+font-size: 30px;
+display: inline;
+margin: 0px;
+}
+
 h3{
   font-family:'Merriweather', 'sans-serif';
+  font-size: 24px;
+  display:inline;
 }
 
 strong{
@@ -58,19 +78,19 @@ strong{
 }
 
 li{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', 'sans-serif';
 }
 
 /* Layout (columns, floats, etc.)
    ================================================================ */
-header a{
-  color: #fff;
-  font-weight: lighter;
-}
+
+
 h1{
   float: left;
   display:inline-block;
   width:50%;
+  padding-left: 30px;
+  font-weight: lighter;
 }
 
 nav{
@@ -79,11 +99,13 @@ nav{
   width: 50%;
   padding-top: 15px;
 }
+
 li{
   display: inline-block;
   width:19%;
   text-align: center;
 }
+
 .tagline{
   clear:both;
   text-align: center;
@@ -92,43 +114,58 @@ li{
   font-size:24px;
   background-color: #D4E1DB;
   margin:0px;
-  padding: 10px 0px 10px 0;
+  padding: 20px 0px 20px 0;
 }
+
 .blurb{
-float:right;
-width: 40%;
-margin:30px 20px 30px;
-border: 1px solid #3c3a3a;
-padding:40px 30px 40px 30px;
+  float:right;
+  width: 40%;
+  margin:30px 20px 30px;
+  padding:40px 30px 40px 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 1px 3px 0px #3c3a3a;
 }
 
 .infoboxes{
   clear:both;
 }
+
 .info{
   clear:both;
   display: inline-block;
   width: 33%;
-  padding: 30px 20px 30px 20px;
+  padding: 20px 30px 20px 30px;
+  margin: 30px 0px 30px 0px;
+}
+
+#bordered{
+  border-right: 1px solid #D2D2D2;
+  border-left: 1px solid #D2D2D2;
 }
 
 /* Header
    ================================================================ */
 header{
-background-color:#3c3a3a;
-border-bottom: 5px solid #FEDB0D;
+  background-color:#3c3a3a;
+  border-bottom: 5px solid #FEDB0D;
 } 
 
+header a{
+  color: #fff;
+  font-weight: lighter;
+}
 
 /* Footer
    ================================================================ */
 footer{
   clear: both;
   background-color:#3c3a3a;
-  padding: 15px 0px 15px 10px;
+  padding: 18px 0px 5px 25px;
   font-family: 'Source Sans Pro', 'sans-serif';
   font-weight: normal;
   color: #fff;
+  font-size:20px;
+  margin-bottom: 5px;
 }
 
 
@@ -140,10 +177,42 @@ footer{
    ================================================================ */
 .banner{
   background-image:url('../images/coworking.jpg');
-  background-position:center;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   clear: both;
+  box-shadow: 0px 0px 3px 1px #3c3a3a;
 }
 
 /* Buttons
    ================================================================ */
+
+.button{
+  text-align: center;
+  font-family:'Oswald', 'sans-serf';
+  text-transform:uppercase;
+  width: 100%;
+  display: inline-block;
+  font-size: 18px;
+  padding: 8px 0px 8px 0px;
+  border-radius:5px;
+}
+
+.blurb a{
+  color: white;
+  background-color: #F74748;
+  border-bottom: 2px solid #cc001a;
+}
+
+.blurb a:hover{
+  background-color: #cc001a;
+}
+
+.info a{
+  background-color: #d4e1db;
+  color: #080808;
+  border-bottom: 2px solid #a9b4af;
+}
+
+.info a:hover{
+  background-color:#a9b4af;
+}
