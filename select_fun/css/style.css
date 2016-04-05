@@ -180,4 +180,14 @@ button {
    ================================================================ */
 .fun {
   /* Add your styles here! background-color and color for fonts (and other styles if you'd like!) */
+  color: #0081ba
+  background-color:#f7f7f7;
+}
+
+#dropdownMenu {
+  display: none;
+}
+
+#answer2 {
+  display: none;
 }
