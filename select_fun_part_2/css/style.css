@@ -115,3 +115,11 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+#row4 div{
+     display:none;
+}
+
+.newclass{
+     background-color:purple;
+}

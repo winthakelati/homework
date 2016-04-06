@@ -1,15 +1,17 @@
 // 1.	Slide the header element up when it is clicked on.
-
+$('header').on('click', function(){
+	$('header').slideUp(300);
+});
 // 2.	Remove the purplebox class from everything.
-
+$('body').removeClass('.purplebox');
 // 3.	Hide all of the div’s in #row4
-
+// display:none in CSS
 // 4.	Add a paragraph that says “I have been added” to all boxes with class “add-para” (Hint: you'll need to look up the append() method)
 
 // 5.	Add a class in your css and add it to all items with the class .box
-
+$('.box').addClass('newclass');
 // 6.	Show the footer when the anchor in #box2 is clicked
-
+$('#box 2 a')descendant('a');.on
 // 7.	Change the styling of the span inside of #box3 by adding a class (and style that class in CSS)
 
 // 8.	Add a unique class to your CSS and add it to the articles in #row1
