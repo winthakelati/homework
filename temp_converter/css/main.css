@@ -53,3 +53,16 @@ button {
   padding: 10px;
 }
 
+.cold{
+  background-color:blue;
+}
+
+.hot{
+  background-color: red;
+}
+
+.mild{
+  background-color: purple;
+}
+
+
